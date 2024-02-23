@@ -1,0 +1,9 @@
+
+Preregistration is nothing more than making your a-priori hypotheses about your data public before running analyses on this very data. It follows the scientific path of generating new hypotheses based on previous observations and then testing these hypotheses on a new dataset. In short: You predict how your data will look like without knowing how your data looks like yet. [Nosek et al. (2018)](10.1073/pnas.1708274114) refer to this as prediction (also known as confirmatory research). This is in contrast to generating new hypotheses after you already inspected your data, i.e., making your research more about why your data looks like as it does and thus applying data-contingent analyses. Nosek et al. (2018) call this postdiction (exploratory research). While there are obviously good reasons and the necessity for either, only with predictive research we are eventually able to reduce uncertainty.
+
+Preregistration isn’t about eliminating postdiction. Postdictions happen continuously with every new study. Preregistration is simply about distinguishing prediction and postdiction in one study: results showing diagnostic value by being predictable vs. unforeseen results possibly building the ground for new predictions (or: what is likely vs. what is possible). Selling postdictive results as predictable fosters overconfidence in evidence that might not exist. In other words, preregistration ultimately defines the meaningfulness of reproducibility.
+
+Hint: if you already made a Research data management (RDM) plan the preregistration will be even easier and faster as some of the preregistration criteria overlap with specifications in a RDM plan.
+
+!!! note "Task" 
+    Go to the OSF. Explore some of the pre-registrations to get a sense of what will be asked. Then, go to our OSF project and do a pre-registration for your own project within this OSF project.

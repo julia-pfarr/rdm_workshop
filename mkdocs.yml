@@ -1,0 +1,75 @@
+site_name: RDM Workshop
+copyright: <a href="https://choosealicense.com/licenses/mit/">License</a>
+  &copy; 2024 Julia-Katharina Pfarr<br>
+theme:                  
+    name: material
+    palette:
+      primary: blue grey
+    font:
+      text: Montserrat
+      code: Roboto mono
+    language: en
+    features:   
+    - navigation.top            
+    - navigation.sections       
+    - navigation.expand        
+    - content.tabs.link  
+    - toc.integrate  
+
+extra:
+  version:
+    provider: mike
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/julia-pfarr
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/julia-katharina-pfarr-2a6437236/
+    - icon: fontawesome/brands/researchgate
+      link: https://www.researchgate.net/profile/Julia-Katharina-Pfarr
+    - icon: material/email
+      link: mailto:pfarr@staff.uni-marburg.de 
+
+plugins:
+  - search
+  - open-in-new-tab
+
+docs_dir: docs 
+nav:
+  - Overview: index.md
+  - Introduction: introduction.md
+  - Open Science Framework: osf.md
+  - Research Data Management Plan: rdmp.md
+  - Preregistration: preregistration.md
+  - Project and Data Organization: organization.md
+  - Metadata: metadata.md
+  - Provenance Tracking: version-control.md
+  - Reproducible analyses: reproducible-analysis.md
+  - Data Storage and Sharing: storage_sharing.md
+  - Copyright and Licenses: copyright_licenses.md
+
+markdown_extensions:
+  - admonition
+  - abbr
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - md_in_html
+  - codehilite
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.tabbed
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.smartsymbols
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji 
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
