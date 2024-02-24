@@ -29,10 +29,6 @@ extra:
     - icon: material/email
       link: mailto:pfarr@staff.uni-marburg.de 
 
-plugins:
-  - search
-  - open-in-new-tab
-
 docs_dir: docs 
 nav:
   - Overview: index.md
