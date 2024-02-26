@@ -93,9 +93,9 @@ Good file names are:
 
 *Machine readable*
 
-[Wikipedia](https://en.wikipedia.org/wiki/Glob_(programming)): **globbing** = "glob patterns specify sets of filenames with wildcard characters. For example, the Unix Bash shell command mv *.txt textfiles/ moves all files with names ending in .txt from the current directory to the directory textfiles. Here, * is a wildcard and *.txt is a glob pattern. The wildcard * stands for "any string of any length including empty, but excluding the path separator characters (/ in unix and \ in windows)". "
+[Wikipedia](https://en.wikipedia.org/wiki/Glob_(programming)): **globbing** = "glob patterns specify sets of filenames with wildcard characters. For example, the Unix Bash shell command `mv *.txt textfiles/` moves all files with names ending in .txt from the current directory to the directory textfiles. Here, * is a wildcard and *.txt is a glob pattern. The wildcard * stands for "any string of any length including empty, but excluding the path separator characters (/ in unix and \ in windows)". "
 
-This means: use  `_` underscore to delimit fields, i.e. when you have multiple `.csv` files that contain data of one type of observations and need to be parsed to one `dataframe` in the end, use the observation name in the file name and delimit this name from the rest of the filename using an underscore. This way you can easily find it with the `ls` command and easly code the read-in for data analysis. At the same time, use  `-` hyphen to delimit words *within* fields.
+This means: use  `_` underscore to delimit fields, i.e. when you have multiple `.csv` files that contain data of one type of observations and need to be parsed to one `dataframe` in the end, use the observation name in the file name and delimit this name from the rest of the filename using an underscore. This way you can easily find it with the `ls` command and easily code the read-in for data analysis. At the same time, use  `-` hyphen to delimit words *within* fields.
 
 Example: If you have a list of files named like this `2022-09-24_Plasmid-Cellline-100-1MutantFraction_A01.csv`, `2022-06-26_Plasmid-Cellline-100-1MutantFraction_H02.csv`, `2022-06-26_Plasmid-Cellline-100-1MutantFraction_H03.csv` you can do multiple machine operations with it:
 

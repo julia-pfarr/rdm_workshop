@@ -29,7 +29,7 @@ A Research Data Management Plan (RDMP) is a formal document that describes the h
 | **Roles and plan oversight** | Who will be responsible for aspects of data management throughout the project, and what resources are required for implementation?| 
 
 !!! note "Task"
-    Go to this [Google Drive Folder](https://docs.google.com/document/d/1F8u1jZFQohW6hj930Vg1rzl4VSbAxJsH/edit?usp=drive_link&ouid=108187111723793053254&rtpof=true&sd=true) and download or copy the RDMP file to your own Google Drive. Fill this file with all the information you can think of for your own project. 
+    Go to this [Google Doc](https://docs.google.com/document/d/1F8u1jZFQohW6hj930Vg1rzl4VSbAxJsH/edit?usp=drive_link&ouid=108187111723793053254&rtpof=true&sd=true) and download the RDMP file into your own project folder. Fill this file with all the information you can think of for your own project. 
 
 ##### Research Data Management Plan Organizer (RDMO) (or DMP Tool)
 

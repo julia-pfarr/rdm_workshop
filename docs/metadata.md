@@ -61,13 +61,13 @@ See the [README template from Cornell](https://cornell.app.box.com/v/ReadmeTempl
 
 **Example README content:**
 
-- Short description of the study
+- Short description of the study, motivation and background
 - A description of the folder structure
 - Time and location of data collection for the studies reported
 - Software required to open or run any of the shared files
-- Under which license(s) the files are shared 
+- Under which license(s) the files are shared: instructions for citing the project
 - Information on the publication status of the studies
-- Contact information for the authors
+- Contact information for the authors: who the team members are and contact details of the project leads
 - A list of all the shared files
 
 ## Tagging
@@ -76,6 +76,7 @@ Tags are keywords assigned to files, and a way to add metadata to a file to orga
 While a file can only be in one folder at a time, it can have an unlimited number of tags. 
 
 Some tips include:
+
 - Use short tag names (one or two words)
 - Be consistent with tags
 - Not all file formats allow tags, and when files are transferred tags may be stripped
@@ -86,7 +87,7 @@ See [Tagging and Finding Your Files by MIT libraries](https://libguides.mit.edu/
     Go to your OSF project and insert the general Metadata. Give your project some tags.
 
 !!! note "Task" 
-    Make a README.md file for your project and put the content described in the README example above. 
+    Make a README.md file for your project and with the content described in the README example above. 
 
 ## Community Standards - Metadata
 
