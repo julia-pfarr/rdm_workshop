@@ -142,6 +142,7 @@ It is very powerful, but difficult to use. Especially, using branches in  submod
 - [Git GUIs](https://git-scm.com/downloads/guis) 
 - [Advanced Git commands](https://www.atlassian.com/git/tutorials/advanced-overview)
 - really, just type anything you want to know about Git in YouTube and you'll find a tutorial for it. I promise. 
+- [Brainhack School Module: Git & GitHub](https://school.brainhackmtl.org/modules/git_github/)
 
 #### DataLad 
 
@@ -149,3 +150,4 @@ It is very powerful, but difficult to use. Especially, using branches in  submod
 - [DataLad Handbook](handbook.datalad.org)
 - [DataLad@NeuroStars](neurostars.org/tag/datalad)
 - [DataLad@YouTube](www.youtube.com/@DataLad)
+- [Brainhack School Module: DataLad](https://school.brainhackmtl.org/modules/datalad/)

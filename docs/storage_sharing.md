@@ -321,7 +321,8 @@ For more information about anonymization:
 - [Webinar: Publishing and citing data in practice by Jez Cope](https://youtu.be/PpMOkTnBMlI)
 - Coursera Videos from [Research Data Management and Sharing](https://www.coursera.org/learn/data-management) on the [Benefits of Sharing](https://www.coursera.org/lecture/data-management/benefits-of-sharing-IPZ0h), [Why Archive Data?](https://www.coursera.org/lecture/data-management/why-archive-data-lcQ2m), and [Why is Archiving Data Important?](https://www.coursera.org/lecture/data-management/why-is-archiving-data-important-04Gji)
 - [Blog: Ask not what you can do for open data; ask what open data can do for you](http://blogs.nature.com/naturejobs/2017/06/19/ask-not-what-you-can-do-for-open-data-ask-what-open-data-can-do-for-you/)
-- - Forschungsdaten.info: Datenschutzrecht (Data protection law) 
+- Forschungsdaten.info: Datenschutzrecht (Data protection law) 
+- [Brainhack School Module: Open Data](https://school.brainhackmtl.org/modules/open_data/)
 
 !!! info
     Most of the content was copied from [The Turing Way Handbook](https://the-turing-way.netlify.app/reproducible-research/rdm/rdm-repository) under a CC-BY 4.0 licence.

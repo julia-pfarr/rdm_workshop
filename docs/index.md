@@ -26,6 +26,8 @@ Under the following sections you'll find the `objectives` for each of the topics
 - [forschungsdaten.info](https://forschungsdaten.info/themen/informieren-und-planen/)
 - [OHBM Open Science Educationals](UChvSitFvqGDeA1y7MJs4CGQ)
 - [NOWA Blog](https://sfbs.pages.uni-marburg.de/sfb135/nowa/nowa.site/post/) and [tutorials](https://sfbs.pages.uni-marburg.de/sfb135/nowa/nowa.site/tutorial/)
+- [NOWA School: a one week school on RDM and reproducible code using Python](https://julia-pfarr.gitlab.io/nowaschool)
+- [Brainhack School Modules](https://school.brainhackmtl.org/modules/)
 
 ## Acknowledgements
 

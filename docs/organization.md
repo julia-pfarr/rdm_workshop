@@ -167,6 +167,9 @@ Basically, all of the above about file naming conventions applies equally to var
 
 Again, checking out if there are community standards in your research field for file and variable naming is a good idea. The above mentioned [BIDS](https://bids-standard.github.io/bids-starter-kit/folders_and_files/folders.html) standard, for example, gives instructions on that, too. 
 
+## Open file formats
+
+This one is short: use open file formats! Open file formats are the ones that can be opened by anyone on any machine without having to install additional software than the one a computer already comes with. Formats like .txt/.md for text or .csv/.tsv for tables can be opened by simple text editors. Formats from proprietary software (like Microsoft Office) cannot. 
 
 ## optional/reading/further materials
 

@@ -107,3 +107,7 @@ Unlike a VM which provides hardware virtualization, a container provides operati
 - [Singularity examples](http://singularity.lbl.gov/tutorials)
 - [one day docker workshop](https://github.com/PeerHerholz/docker_workshop)
 - [Docker vs. python virtualization vs. virtual machines](https://stephen-odaibo.medium.com/docker-containers-python-virtual-environments-virtual-machines-d00aa9b8475#:~:text=Docker%20containers%20package%20all%20the,Tensorflow%201.13%20and%20Keras%202.1.)
+- [Brainhack School Module: Containers](https://school.brainhackmtl.org/modules/containers/)
+- [Brainhack School Module: Intro to Python](https://school.brainhackmtl.org/modules/python_data_analysis/)
+- [Brainhack School Module: Data Visualization with Python](https://school.brainhackmtl.org/modules/python_visualization/)
+- [Brainhack School Module: Writing Scripts in Python](https://school.brainhackmtl.org/modules/python_scripts/)
