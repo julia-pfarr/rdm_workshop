@@ -1,0 +1,1005 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../preregistration/">
+      
+      
+        <link rel="next" href="../metadata/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.19">
+    
+    
+      
+        <title>Project and Data Organization - RDM Workshop</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.66ac8b77.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,700,700i%7CRoboto+mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Montserrat";--md-code-font:"Roboto mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#project-organization" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="RDM Workshop" class="md-header__button md-logo" aria-label="RDM Workshop" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            RDM Workshop
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Project and Data Organization
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/julia-pfarr/rdm_workshop" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="RDM Workshop" class="md-nav__button md-logo" aria-label="RDM Workshop" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    RDM Workshop
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/julia-pfarr/rdm_workshop" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../osf/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Open Science Framework
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rdmp/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Research Data Management Plan
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../preregistration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Preregistration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Project and Data Organization
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Project and Data Organization
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#project-organization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Project Organization
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Project Organization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#project-organization-one-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Project Organization: One Example
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#file-naming-conventions" class="md-nav__link">
+    <span class="md-ellipsis">
+      File Naming Conventions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variable-naming" class="md-nav__link">
+    <span class="md-ellipsis">
+      Variable naming
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#open-file-formats" class="md-nav__link">
+    <span class="md-ellipsis">
+      Open file formats
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#optionalreadingfurther-materials" class="md-nav__link">
+    <span class="md-ellipsis">
+      optional/reading/further materials
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="optional/reading/further materials">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#project-organisation-other-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Project Organisation: Other Examples
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#more-information-on-project-organisation" class="md-nav__link">
+    <span class="md-ellipsis">
+      More Information on Project Organisation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#more-information-on-file-naming" class="md-nav__link">
+    <span class="md-ellipsis">
+      More Information on File naming
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#file-renaming-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      File renaming tools
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../metadata/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Metadata
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../version-control/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Provenance Tracking
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reproducible-analysis/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reproducible analyses
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../storage_sharing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data Storage and Sharing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../copyright_licenses/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Copyright and Licenses
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+  <h1>Project and Data Organization</h1>
+
+<div class="admonition abstract">
+<p class="admonition-title">Objectives📍</p>
+<ul>
+<li>folder structure</li>
+<li>file naming</li>
+<li>variable naming</li>
+<li>backups</li>
+</ul>
+</div>
+<h2 id="project-organization">Project Organization</h2>
+<p>To organize your data, you should use a clear folder structure to ensure that you can find your files. For this there are already multiple existing templates.</p>
+<figure>
+  <img alt="Folder structure for research data" src="../assets/images/repo_structure.jpg" width="600" />
+  <figcaption>The Turing Way_ project illustration by Scriberia. Used under a CC-BY 4.0 licence. DOI: [10.5281/zenodo.3332807](https://doi.org/10.5281/zenodo.3332807)</figcaption>
+</figure>
+<p>If you don't find any template that suits your needs (which I doubt...), make sure you follow these general suggestions on organization of folders: </p>
+<ul>
+<li>Make sure you have enough (sub)folders so that files can be stored in the right folder and are not scattered in folders where they do not belong, or stored in large quantities in a single folder.</li>
+<li>Use a clear folder structure. You can structure folders based on the person that has generated the data/folder, chronologically (month, year, sessions), per project (as done in the example below), or based on analysis method/equipment or data type.</li>
+<li>Avoid overlapping or vague folder names, and do not use personal data in folder/file names.</li>
+<li>All good structures contain at least the following elements:<ul>
+<li>A unique main folder for the project</li>
+<li>Some form of code</li>
+<li>Some form of data</li>
+<li>A readme document with any important information about the project for yourself or collaborators</li>
+</ul>
+</li>
+</ul>
+<h3 id="project-organization-one-example">Project Organization: One Example <sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></h3>
+<div class="highlight"><pre><span></span><code>.
+├── LICENSE.md
+├── README.md
+├── code
+│   ├── experiment
+│   ├── analysis
+├── data              
+│   ├── source         &lt;- The original, immutable data dump. 
+│   ├── raw            &lt;- The final, canonical data sets for modeling.
+│   ├── derivatives    &lt;- Data after being processed by analysis pipelines.
+│   └── temp           &lt;- Intermediate data that has been transformed. 
+├── docs               &lt;- Documentation notebook for users.
+│   ├── manuscript     &lt;- Manuscript source, e.g., LaTeX, Markdown, etc.
+│   ├── study-protocol &lt;- or `preregistration`
+│   └── reports        &lt;- Other project reports and notebooks (e.g. Jupyter, .Rmd)
+└── results
+    ├── figures        &lt;- Figures for the manuscript or reports 
+    └── output         &lt;- Other output for the manuscript or reports 
+</code></pre></div>
+<p>It doesn't matter too much if you name the folder with processed data <code>processed</code> and have it under the upper folder <code>data</code> or if you have it one level up and name it instead <code>edited data</code> or what have you. The important thing is that you choose a structure and stick to it and best explain it to others by putting an explanation of the project folder structure in a README. What you should do though is checking out if there are community standards for folder structure in your research field. For example, in psychology and neuroscience we have a widely accepted and comprehensively documented standard called <a href="https://bids-standard.github.io/bids-starter-kit/folders_and_files/folders.html">BIDS</a>. Some data repositories now expect you to have the data in this format, otherwise they won't accept your data. So, just make sure that you follow recommendations and principles in your field of research (if there are any). </p>
+<p>How you organize your <code>data</code> folder depends on your kind of research data. For some it is better to have separate folders for each subject, e.g., if you collect multiple modality data from subjects. Then you can organize your <code>data</code> folder as such (inspired by BIDS for psychology and neurosciences):</p>
+<div class="highlight"><pre><span></span><code>├── data              
+│   ├── source         
+│   ├── raw  
+│   │   ├── sub-01
+│   │   │   ├── beh
+│   │   │   │   ├── sub-01_beh.csv
+│   │   │   ├── eeg
+│   │   │   │   ├── sub-01_eeg.edf
+│   │   ├── sub-02
+│   │   │   ├── beh
+│   │   │   │   ├── sub-02_beh.csv
+│   │   │   ├── eeg
+│   │   │   │   ├── sub-02_eeg.edf
+│   ├── derivatives    
+│   └── temp    
+</code></pre></div>
+<p>If you only have one data type, you can skip the <code>sub-0X</code> and <code>modality</code> folders, like so:</p>
+<div class="highlight"><pre><span></span><code>├── data              
+│   ├── source         
+│   ├── raw  
+│   │   ├── sub-01_beh.csv
+│   │   ├── sub-02_beh.csv
+│   ├── derivatives    
+│   └── temp    
+</code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Task</p>
+<p>Go through your project folder and re-organize it using the above mentioned recommendations. </p>
+</div>
+<h2 id="file-naming-conventions">File Naming Conventions</h2>
+<p>Structure your file names and set up a template for this.
+For example, it may be advantageous to start naming your files with the date each file was generated.
+This will sort your files chronologically and create a unique identifier for each file.
+The utility of this process is apparent when you generate multiple files on the same day that may need to be versioned to avoid overwriting.</p>
+<p>Some other tips for file naming include:</p>
+<ul>
+<li>Use the date or date range of the experiment: <code>YYYY-MM-DD</code></li>
+<li>Use the file type</li>
+<li>Use the researcher's name/initials</li>
+<li>Use the version number of file (v001, v002) or language used in the document (ENG)</li>
+<li>Do not make file names too long (this can complicate file transfers)</li>
+<li>Avoid special characters (?!@*%{[&lt;&gt;) and spaces</li>
+<li>Avoid personal data in file names</li>
+</ul>
+<p>You can explain the file naming convention in a README file so that it will also become apparent to others what the file names mean.</p>
+<p><a href="https://speakerdeck.com/jennybc/how-to-name-files">Jenny Bryan’s ‘naming things’ presentation</a> (also available as a <a href="https://youtu.be/ES1LTlnpLMk">5 minute summary video on youtube</a>) gives very concrete and intuitive recommendations and examples. Here's the main content of her talk for you: </p>
+<table>
+<thead>
+<tr>
+<th>Don't do this</th>
+<th>Do this instead</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>myabstract.docx</td>
+<td>2022-09-24_abstract-for-normconf.docx</td>
+</tr>
+<tr>
+<td>Jane’s Filenames Use “Spaces” &amp; Punctuation ;).xlsx</td>
+<td>janes-filenames-are-getting-better.xlsx</td>
+</tr>
+<tr>
+<td>figure 1.png</td>
+<td>fig01_scatterplot-talk-length-vs-interest.png</td>
+</tr>
+<tr>
+<td>JW7d^(2sl@deletethisandyourcareerisoverWx2*.txt</td>
+<td>1986-01-28_raw-data-from-challenger-o-rings.txt</td>
+</tr>
+</tbody>
+</table>
+<p>Good file names are:</p>
+<ul>
+<li>machine readable</li>
+<li>human readable</li>
+<li>sorted in a useful way</li>
+</ul>
+<p><em>Machine readable</em></p>
+<p><a href="https://en.wikipedia.org/wiki/Glob_(programming)">Wikipedia</a>: <strong>globbing</strong> = "glob patterns specify sets of filenames with wildcard characters. For example, the Unix Bash shell command <code>mv *.txt textfiles/</code> moves all files with names ending in .txt from the current directory to the directory textfiles. Here, * is a wildcard and *.txt is a glob pattern. The wildcard * stands for "any string of any length including empty, but excluding the path separator characters (/ in unix and  in windows)". "</p>
+<p>This means: use  <code>_</code> underscore to delimit fields, i.e. when you have multiple <code>.csv</code> files that contain data of one type of observations and need to be parsed to one <code>dataframe</code> in the end, use the observation name in the file name and delimit this name from the rest of the filename using an underscore. This way you can easily find it with the <code>ls</code> command and easily code the read-in for data analysis. At the same time, use  <code>-</code> hyphen to delimit words <em>within</em> fields.</p>
+<p>Example: If you have a list of files named like this <code>2022-09-24_Plasmid-Cellline-100-1MutantFraction_A01.csv</code>, <code>2022-06-26_Plasmid-Cellline-100-1MutantFraction_H02.csv</code>, <code>2022-06-26_Plasmid-Cellline-100-1MutantFraction_H03.csv</code> you can do multiple machine operations with it:</p>
+<ul>
+<li>you can find those files in your folder under all the other files by simply typing <code>ls *Plasmid*</code> in the terminal</li>
+<li>you can read in the different parts of the filename as headers for your dataframe by coding a delimiter rule, e.g., in <code>R</code> a code like: </li>
+</ul>
+<div class="highlight"><pre><span></span><code>separate_wider_delim(
+    filenames,
+    delim = regex(&quot;[_\\.]&quot;),
+    names = c(&quot;date&quot;, &quot;assay&quot;, &quot;well&quot;, NA)
+)
+</code></pre></div>
+<p>leads to an output of:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>date</th>
+<th>assay</th>
+<th>well</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>2022-09-24</td>
+<td>Plasmid-Cellline-100-1MutantFraction</td>
+<td>A01</td>
+</tr>
+<tr>
+<td>2</td>
+<td>2022-06-26</td>
+<td>Plasmid-Cellline-100-1MutantFraction</td>
+<td>H02</td>
+</tr>
+<tr>
+<td>3</td>
+<td>2022-06-26</td>
+<td>Plasmid-Cellline-100-1MutantFraction</td>
+<td>H03</td>
+</tr>
+</tbody>
+</table>
+<p><em>Human readable</em></p>
+<p>Make sure that at least you yourself are able to decode from the filename what is in it. Try also to make it easy for others to guess what something is. </p>
+<table>
+<thead>
+<tr>
+<th>Don't do this</th>
+<th>Do this instead</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01.md</td>
+<td>01_marshal-data.md</td>
+</tr>
+<tr>
+<td>01.R</td>
+<td>01_marshal-data.R</td>
+</tr>
+<tr>
+<td>02.md</td>
+<td>02_pre-dea-filtering.md</td>
+</tr>
+<tr>
+<td>02.R</td>
+<td>02_pre-dea-filtering.R</td>
+</tr>
+<tr>
+<td>03.md</td>
+<td>03_dea-with-limma-voom.md</td>
+</tr>
+<tr>
+<td>03.R</td>
+<td>03_dea-with-limma-voom.R</td>
+</tr>
+<tr>
+<td>04.md</td>
+<td>04_explore-dea-results.md</td>
+</tr>
+<tr>
+<td>04.R</td>
+<td>04_explore-dea-results.R</td>
+</tr>
+<tr>
+<td>9.md</td>
+<td>90_limma-model-term-name-fiasco.md</td>
+</tr>
+<tr>
+<td>90.R</td>
+<td>90_limma-model-term-name-fiasco.R</td>
+</tr>
+</tbody>
+</table>
+<p><em>Dates</em></p>
+<p>To be able to sort file in a chronological order it is always a good idea to include a date in the filename. For this you should respect <code>ISO 8601</code> which states that dates should be written in the <code>YYYY-MM-DD</code> format. Don't let the US convince you to use MM-DD-YYYY...they're really the only ones using this format.</p>
+<p><em>Sorted in a useful way</em></p>
+<ul>
+<li>plan for alphanumeric sorting</li>
+<li>put something numeric-ish first-ish</li>
+<li>use the ISO 8601 standard for dates</li>
+<li>left pad numbers with zeros. Otherwise the file starting with a <code>10</code> will be shown above the file starting with a <code>1</code> in the folder, which is confusing. </li>
+</ul>
+<h2 id="variable-naming">Variable naming</h2>
+<p>Basically, all of the above about file naming conventions applies equally to variable naming. Here are some conventions you should know about:</p>
+<ul>
+<li>CamelCase</li>
+<li>lowerCamelCase</li>
+<li>Underscore_Methods</li>
+<li>Mixed_Case_with_Underscores</li>
+<li>lowercase</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Task</p>
+<p>Go through your project files and rename files and variables using the above mentioned recommendations.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Task</p>
+<p>Go to your OSF project and upload your newly organized folder. You can either upload the whole folder in your OSF project main page or use the <em>components</em> feature in OSF. </p>
+</div>
+<p>Again, checking out if there are community standards in your research field for file and variable naming is a good idea. The above mentioned <a href="https://bids-standard.github.io/bids-starter-kit/folders_and_files/folders.html">BIDS</a> standard, for example, gives instructions on that, too. </p>
+<h2 id="open-file-formats">Open file formats</h2>
+<p>This one is short: use open file formats! Open file formats are the ones that can be opened by anyone on any machine without having to install additional software than the one a computer already comes with. Formats like .txt/.md for text or .csv/.tsv for tables can be opened by simple text editors. Formats from proprietary software (like Microsoft Office) cannot. </p>
+<h2 id="optionalreadingfurther-materials">optional/reading/further materials</h2>
+<h4 id="project-organisation-other-examples">Project Organisation: Other Examples</h4>
+<ul>
+<li><a href="http://nikola.me/folder_structure.html">This</a> folder structure by Nikola Vukovic</li>
+<li>You can pull/download folder structures using GitHub:
+<a href="https://github.com/bvreede/good-enough-project">This template</a> by Barbara Vreede, based on <a href="https://github.com/cookiecutter/cookiecutter">cookiecutter</a>, follows recommended practices for scientific computing by <a href="https://doi.org/10.1371/journal.pcbi.1005510">Wilson et al. (2017)</a>.</li>
+<li>See <a href="https://osf.io/4sdn3/">this template</a> by Chris Hartgerink for file organisation on the <a href="https://osf.io/">Open Science Framework</a>.</li>
+<li><a href="https://www.nytimes.com/wirecutter/guides/how-to-organize-your-digital-files/">How to Organize Your Digital Files</a> by Melanie Pinola.</li>
+<li><a href="https://www.youtube.com/watch?v=u6MiDFvAs9w&amp;list=PLRPB0ZzEYegPiBteC2dRn95TX9YefYFyy&amp;index=1">Project structure videos by Danielle Navarro</a> (with <a href="https://slides.djnavarro.net/project-structure/#1">slides</a>).</li>
+</ul>
+<h4 id="more-information-on-project-organisation">More Information on Project Organisation</h4>
+<ul>
+<li><a href="https://renebekkers.wordpress.com/2021/04/02/how-to-organize-your-data-and-code">How to organise your data and code</a> by Rene Bekkers. </li>
+</ul>
+<h4 id="more-information-on-file-naming">More Information on File naming</h4>
+<ul>
+<li><a href="https://libraries.mit.edu/data-management/store/organize/">MIT's recommendations on File naming and folder hierarchy</a></li>
+<li><a href="https://resolver.caltech.edu/CaltechAUTHORS:20200601-161923247">8 step guide on how to set up your file naming convention</a> </li>
+</ul>
+<h4 id="file-renaming-tools">File renaming tools</h4>
+<p>If you want to change your file names you have the option to use bulk renaming tools.
+Be careful with these tools, because changes made with bulk renaming tools may be too rigorous if not carefully checked!</p>
+<p>Some bulk file renaming tools include: 
+- <a href="http://www.bulkrenameutility.co.uk/Main_Intro.php">Bulk Rename Utility</a>, <a href="http://www.cylog.org/utilities/wildrename.jsp">WildRename</a>, and <a href="http://www.antp.be/software/renamer">Ant Renamer</a> (for Windows)
+- <a href="https://renamer.com/">Renamer</a> (for MacOS)
+- <a href="http://www.cylog.org/utilities/wildrename.jsp">PSRenamer</a> (for MacOS, Windows, Unix, Linux)</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Most of the content was copied from <a href="https://the-turing-way.netlify.app/reproducible-research/rdm/rdm-storage">The Turing Way Handbook</a> under a CC-BY 4.0 licence.</p>
+</div>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>adapted from <a href="https://github.com/bvreede/good-enough-project">this template</a> by Barbara Vreede.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      <a href="https://choosealicense.com/licenses/mit/">License</a> &copy; 2024 Julia-Katharina Pfarr<br>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/julia-pfarr" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/in/julia-katharina-pfarr-2a6437236/" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.researchgate.net/profile/Julia-Katharina-Pfarr" target="_blank" rel="noopener" title="www.researchgate.net" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M0 32v448h448V32H0zm262.2 334.4c-6.6 3-33.2 6-50-14.2-9.2-10.6-25.3-33.3-42.2-63.6-8.9 0-14.7 0-21.4-.6v46.4c0 23.5 6 21.2 25.8 23.9v8.1c-6.9-.3-23.1-.8-35.6-.8-13.1 0-26.1.6-33.6.8v-8.1c15.5-2.9 22-1.3 22-23.9V225c0-22.6-6.4-21-22-23.9V193c25.8 1 53.1-.6 70.9-.6 31.7 0 55.9 14.4 55.9 45.6 0 21.1-16.7 42.2-39.2 47.5 13.6 24.2 30 45.6 42.2 58.9 7.2 7.8 17.2 14.7 27.2 14.7v7.3zm22.9-135c-23.3 0-32.2-15.7-32.2-32.2V167c0-12.2 8.8-30.4 34-30.4s30.4 17.9 30.4 17.9l-10.7 7.2s-5.5-12.5-19.7-12.5c-7.9 0-19.7 7.3-19.7 19.7v26.8c0 13.4 6.6 23.3 17.9 23.3 14.1 0 21.5-10.9 21.5-26.8h-17.9v-10.7h30.4c0 20.5 4.7 49.9-34 49.9zm-116.5 44.7c-9.4 0-13.6-.3-20-.8v-69.7c6.4-.6 15-.6 22.5-.6 23.3 0 37.2 12.2 37.2 34.5 0 21.9-15 36.6-39.7 36.6z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="mailto:pfarr@staff.uni-marburg.de" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m20 8-8 5-8-5V6l8 5 8-5m0-2H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.top", "navigation.sections", "navigation.expand", "content.tabs.link", "toc.integrate"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.dd8806f2.min.js"></script>
+      
+    
+  </body>
+</html>
