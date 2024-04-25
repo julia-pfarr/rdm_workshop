@@ -101,4 +101,4 @@ There are useful tools which automate this available from [REUSE](https://reuse.
 This is especially true if your project contains material that is licensed in multiple different ways or a part of your project is being used in someone else's which uses a different (compatible) license.
 
 !!! note "Task"
-    Got to your OSF project and add a LICENSE file. 
+    Go to the [Creative Commons License Chooser](https://creativecommons.org/choose/) and select a license. Then, go to your OSF project and add a LICENSE file.  
