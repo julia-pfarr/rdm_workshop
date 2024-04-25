@@ -94,11 +94,7 @@ See [Tagging and Finding Your Files by MIT libraries](https://libguides.mit.edu/
 The use of community-defined standards for metadata is vital for reproducible research and allows for the comparison of heterogeneous data from multiple sources, domains and disciplines.
 Metadata standards are also discipline-specific.
 Not every discipline may use metadata standards, however.
-You can see if your discipline uses metadata standards through [FAIRsharing](https://fairsharing.org/), a resource to identify and cite the metadata or identifier schemas, databases or repositories that exist for your data and discipline. 
-
-!!! note "Task"
-    Got through [FAIRsharing](https://fairsharing.org/) and see if there are any specific standards for metadata in your research field. 
-
+For the field of psychology and neuroscience, [BIDS](https://bids-standard.github.io/bids-starter-kit/folders_and_files/folders.html) defines for the different data modalities which metadata has to be available in the dataset, how it is supposed to be named and in which folder it has to be placed. 
 
 Again, for the field of psychology and neuroscience, [BIDS](https://bids-standard.github.io/bids-starter-kit/folders_and_files/folders.html) defines for the different data modalities which metadata has to be available in the dataset, how it is supposed to be named and in which folder it has to be placed. 
 
@@ -106,6 +102,17 @@ There are also situations when researchers make use of more general metadata sta
 
 !!! note "Task"
     Go to the [DataCite generator](https://dhvlab.gwi.uni-muenchen.de/datacite-generator/) and generate a metadata file for your project.
+
+## optional/reading/further materials
+
+- [Full BIDS documentation](https://bids-specification.readthedocs.io/en/stable/)
+- [BIDS Starter Kit Tutorials](https://bids-standard.github.io/bids-starter-kit/tutorials/tutorials.html)
+- [BIDS Talks](osf.io/yn93h) where the background and philosophy of BIDS are explained 
+- [BIDS cookbook](https://remi-gau.github.io/bids_cookbook/)
+- [BIDS converters](https://bids.neuroimaging.io/benefits.html#converters)
+- [BIDS validator](https://bids-standard.github.io/bids-validator/): checks if your dataset is in a valid BIDS format
+- [BIDS Apps](https://bids-apps.neuroimaging.io/)
+- You are very welcome to reach out to me if you want to start using BIDS. I know it's a lot and can be overwhelming in the beginning. I'm happy to help you get started!
 
 !!! info
     Most of the content was copied from [The Turing Way Handbook](https://the-turing-way.netlify.app/reproducible-research/rdm/rdm-metadata) under a CC-BY 4.0 licence.

@@ -38,8 +38,9 @@ If you don't find any template that suits your needs (which I doubt...), make su
 │   ├── experiment
 │   ├── analysis
 ├── data              
-│   ├── processed      <- The final, canonical data sets for modeling. 
-│   ├── raw            <- The original, immutable data dump. 
+│   ├── source         <- The original, immutable data dump. 
+│   ├── raw            <- The final, canonical data sets for modeling.
+│   ├── derivatives    <- Data after being processed by analysis pipelines.
 │   └── temp           <- Intermediate data that has been transformed. 
 ├── docs               <- Documentation notebook for users.
 │   ├── manuscript     <- Manuscript source, e.g., LaTeX, Markdown, etc.
@@ -51,6 +52,38 @@ If you don't find any template that suits your needs (which I doubt...), make su
 ```
 
 It doesn't matter too much if you name the folder with processed data `processed` and have it under the upper folder `data` or if you have it one level up and name it instead `edited data` or what have you. The important thing is that you choose a structure and stick to it and best explain it to others by putting an explanation of the project folder structure in a README. What you should do though is checking out if there are community standards for folder structure in your research field. For example, in psychology and neuroscience we have a widely accepted and comprehensively documented standard called [BIDS](https://bids-standard.github.io/bids-starter-kit/folders_and_files/folders.html). Some data repositories now expect you to have the data in this format, otherwise they won't accept your data. So, just make sure that you follow recommendations and principles in your field of research (if there are any). 
+
+How you organize your `data` folder depends on your kind of research data. For some it is better to have separate folders for each subject, e.g., if you collect multiple modality data from subjects. Then you can organize your `data` folder as such (inspired by BIDS for psychology and neurosciences):
+
+```
+├── data              
+│   ├── source         
+│   ├── raw  
+│   │   ├── sub-01
+│   │   │   ├── beh
+│   │   │   │   ├── sub-01_beh.csv
+│   │   │   ├── eeg
+│   │   │   │   ├── sub-01_eeg.edf
+│   │   ├── sub-02
+│   │   │   ├── beh
+│   │   │   │   ├── sub-02_beh.csv
+│   │   │   ├── eeg
+│   │   │   │   ├── sub-02_eeg.edf
+│   ├── derivatives    
+│   └── temp    
+``` 
+
+If you only have one data type, you can skip the `sub-0X` and `modality` folders, like so:
+
+```
+├── data              
+│   ├── source         
+│   ├── raw  
+│   │   ├── sub-01_beh.csv
+│   │   ├── sub-02_beh.csv
+│   ├── derivatives    
+│   └── temp    
+``` 
 
 !!! note "Task"
 
