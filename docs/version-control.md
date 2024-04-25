@@ -134,6 +134,9 @@ It is very powerful, but difficult to use. Especially, using branches in  submod
 
 #### Git 
 
+- [Beginner Git & GitLab Tutorial](https://julia-pfarr.github.io/git-gitlab_tutorial/)
+- [NOWA Workshops](https://sfbs.pages.uni-marburg.de/sfb135/nowa/nowa.site/tutorial/)
+- [NOWA School](https://julia-pfarr.gitlab.io/nowaschool/intro.html)
 - YouTube is full of Git/GitLab/GitHub videos for all kinds of levels and features!!! For example: Brainhack [Git introduction](https://youtu.be/fBgxmpk9C4I?si=im33MV2V0PV8uM0k) or [GitHub CI](https://youtu.be/VibDC49ZAJE?si=587WHWe1nZQzHIay)
 - Git cheat sheet by [gitlab](https://about.gitlab.com/images/press/git-cheat-sheet.pdf) or [github](https://education.github.com/git-cheat-sheet-education.pdf)
 - [Atlassian tutorials](https://www.atlassian.com/git/tutorials) and [cheat sheet](https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet)
